@@ -9,7 +9,7 @@ concurrency:
 jobs:
   test:
     name: 'Test'
-    runs-on: [test]
+    runs-on: [ubuntu-latest]
     env:
       LANG: en_US.UTF-8
 
