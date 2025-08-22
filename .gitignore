@@ -16,3 +16,6 @@
 
 # broccoli-debug
 /DEBUG/
+public/assets/nutrient-viewer-lib
+public/assets/index.d.ts
+public/assets/nutrient-viewer.js

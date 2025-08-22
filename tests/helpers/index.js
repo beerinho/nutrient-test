@@ -39,4 +39,9 @@ function setupTest(hooks, options) {
   // Additional setup for unit tests can be done here.
 }
 
-export { setupApplicationTest, setupRenderingTest, setupTest };
+const setupNutrient = async (context) => {
+  const nutrient = context.owner.lookup('service:nutrient');
+  await nutrient.preloadWorker();
+};
+
+export { setupApplicationTest, setupRenderingTest, setupTest, setupNutrient };
